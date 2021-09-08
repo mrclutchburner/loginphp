@@ -134,9 +134,9 @@ a.ca:hover {
 /*Media Queries*/
 
 .form .logo{
-	position: block;
-	top: 40px;
-    width: 100%;
+	position: relative;
+	top: 15px;
+    width: 130px;
     height: 130px;
 }
 .form .logo .rotate_1{
@@ -157,7 +157,7 @@ a.ca:hover {
     -moz-animation: spin 15s linear infinite;
     animation: spin 15s linear infinite;
 }
-/*
+
 @media(max-width:820px){
     .form .logo .rotate_1{
         display: inline-block;
@@ -294,7 +294,7 @@ a.ca:hover {
 		font-size:25px;
 	}
 }
-*/
+
 	</style>
 </head>
 <body>
