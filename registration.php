@@ -25,17 +25,18 @@ body {
 }
 
 .form {
+	display: relative;
 	width: 400px;
+	height: 600px;
 	border: 1px solid #6e6a6a;
 	box-shadow: 0px 10px 50px #550;
-	padding: 10px 30px;
+	padding: 5px 30px;
 	background: #ffffff42;
 	border-radius: 15px;
 }
 h2 {
-	padding-top: 0;
-	align-items: center;
-	margin-bottom: 5px;
+	text-align: center;
+	margin-bottom: 2px;
 	font-weight:800;
 	font-size:35px;
 }
@@ -53,7 +54,7 @@ input {
 label {
 	color: #625f5f;
 	font-size: 18px;
-	padding: 10px;
+	padding: 12px;
 	font-weight: 600;
 }
 
@@ -75,19 +76,21 @@ button:hover{
 }
 .error {
    background: #F2DEDE;
+   text-align: center;
    color: #A94442;
-   padding: 10px;
-   width: 95%;
-   border-radius: 5px;
-   margin: 20px auto;
+   padding: 2px;
+	width: 80%;
+	border-radius: 5px;
+	margin: 5px auto;
 }
 .success {
 	background: #d4edda;
+	text-align: center;
 	color: #40754c;
-	padding: 10px;
-	width: 95%;
+	padding: 2px;
+	width: 80%;
 	border-radius: 5px;
-	margin: 20px auto;
+	margin: 5px auto;
  }
 
 h1 {
@@ -134,25 +137,25 @@ a.ca:hover {
 /*Media Queries*/
 
 .form .logo{
+	top: 10px;
 	position: relative;
-	top: 15px;
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
 }
 .form .logo .rotate_1{
 	position: absolute;
-	top: 40px;
+	top: 10px;
 	align-items: center;
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     -webkit-transition: -webkit-transform 1s;
 }
 .form .logo .rotate_2{
 	position: absolute;
-  	top: 40px;
+  	top: 10px;
 	align-items: center;
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     -webkit-animation: spin 15s linear infinite; 
     -moz-animation: spin 15s linear infinite;
     animation: spin 15s linear infinite;
@@ -187,48 +190,56 @@ a.ca:hover {
 @media(max-width:768px){
     .form .logo .rotate_1{
         display: inline-block;
-        margin: -20px 0 -112px 0;
-        width: 140px;
-        height: 140px;
+        margin: -30px 0 -74px 0;
+        width: 90px;
+        height: 90px;
     }
     .form .logo .rotate_2{
         display: inline-block;
-        margin: -30px 0 80px 0;
-        width: 140px;
-        height: 140px;
+        margin: -30px 0 100px 0;
+        width: 90px;
+        height: 90px;
+	}
+	.form .logo{
+	top: 30px;
+	position: relative;
+    width: 80px;
+    height: 80px;
 	}
 	h2{
 		text-align: center;
 		margin-bottom: 5px;
 		font-weight:800;
-		font-size:60px;
+		font-size:32px;
 	}
-	label {
-	font-size: 22px;
-	padding: 10px;
-	font-weight: 600;
 }
-}
+
 
 
 @media(max-width:720px){
     .form .logo .rotate_1{
         display: inline-block;
         margin: -30px 0 -74px 0;
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
     }
     .form .logo .rotate_2{
         display: inline-block;
         margin: -30px 0 100px 0;
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
+	}
+	.form .logo{
+	top: 30px;
+	position: relative;
+    width: 80px;
+    height: 80px;
 	}
 	h2{
 		text-align: center;
 		margin-bottom: 5px;
 		font-weight:800;
-		font-size:35px;
+		font-size:32px;
 	}
 }
 
@@ -245,61 +256,69 @@ a.ca:hover {
         width: 110px;
         height: 110px;
 	}
-	h2{
-		text-align: center;
-		margin-bottom: 5px;
-		font-weight:800;
-		font-size:40px;
-	}
+	
 }
 
-@media(max-width:520px){
+@media(max-width:540px){
     .form .logo .rotate_1{
         display: inline-block;
-        margin: -10px 0 -103px 0;
-        width: 100px;
-        height: 100px;
+        margin: -30px 0 -74px 0;
+        width: 90px;
+        height: 90px;
     }
     .form .logo .rotate_2{
         display: inline-block;
-        margin: -20px 0 -85px 0;
-        width: 100px;
-        height: 100px;
+        margin: -30px 0 100px 0;
+        width: 90px;
+        height: 90px;
+	}
+	.form .logo{
+	top: 30px;
+	position: relative;
+    width: 80px;
+    height: 80px;
 	}
 	h2{
 		text-align: center;
 		margin-bottom: 5px;
 		font-weight:800;
-		font-size:35px;
+		font-size:32px;
 	}
 }
+
 
 @media(max-width:320px){
     .form .logo .rotate_1{
         display: inline-block;
-        margin: -30px 0 -103px 0;
+        margin: -30px 0 -74px 0;
         width: 90px;
         height: 90px;
     }
     .form .logo .rotate_2{
         display: inline-block;
-        margin: -10px 0 -85px 0;
+        margin: -30px 0 100px 0;
         width: 90px;
         height: 90px;
 	}
+	.form .logo{
+	top: 30px;
+	position: relative;
+    width: 80px;
+    height: 80px;
+	}
 	h2{
 		text-align: center;
-		margin-bottom: 3px;
+		margin-bottom: 5px;
 		font-weight:800;
-		font-size:25px;
+		font-size:32px;
 	}
 }
 
 	</style>
 </head>
 <body>
-<div class="form" action="registration-check.php" method="post">
-     
+<form action="registration-check.php" method="post">
+		<div class="form">
 	 	<div class="logo">
             <img class="rotate_1" src="Eleco new logo.png">
             <img class="rotate_2" src="Eleco new logo 1975.png">
@@ -362,8 +381,8 @@ a.ca:hover {
 		<?php }?>
 	
      	<button type="submit">Register</button>
-		    
-</div>
+		</div>
+	</form>
      
 </body>
 </html>

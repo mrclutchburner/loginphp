@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `mcoss` (
   `id` int(9) NOT NULL,
-  `acctnum` varchar(11) NOT NULL,
+  `acctnum` varchar(9) NOT NULL,
   `address` varchar(100) NOT NULL,
   `contact` varchar(11) NOT NULL,
   `name` varchar(255) NOT NULL

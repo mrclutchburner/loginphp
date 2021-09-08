@@ -59,6 +59,6 @@ if (isset($_POST['acctnum']) && isset($_POST['name'])
 	}
 	
 }else{
-	header("Location: signup.php");
+	header("Location: registration.php");
 	exit();
 }
